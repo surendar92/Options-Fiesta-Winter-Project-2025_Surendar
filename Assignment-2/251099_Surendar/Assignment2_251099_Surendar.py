@@ -43,7 +43,7 @@ def put_option(strike_price,premium):
     plt.plot(spot_prices,payoff,color='green',lw=2,label=call_status)
 
     plt.axhline(y=0,color='grey',lw=2,ls='--',label='Break-Even')##BREAK-EVEN LINE
-    plt.axvline(x=strike_price+abs(premium),lw=2,ls='--',color='grey')
+    plt.axvline(x=strike_price-abs(premium),lw=2,ls='--',color='grey')
 
     plt.axvline(x=strike_price,lw=2,ls='--',color='red',label='strike_price')## STRIKE PRICE
     plt.title(title,fontsize=16,color='darkblue',fontweight="bold")
